@@ -23,7 +23,7 @@ An AI-powered chatbot that helps identify and classify fake news using Natural L
 
 ---
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 
 Python (main programming language)
 
@@ -35,7 +35,7 @@ Flask / Django / Streamlit (for chatbot or web app interface)
 
 GitHub Actions (for version control and CI/CD)
 
-📂 Project Structure
+# 📂 Project Structure
 
 AI-Fake-News-Detection-Chatbot/
 │── data/                # Dataset(s) used for training and testing
