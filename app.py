@@ -55,7 +55,7 @@ st.markdown("Enter a topic below to fetch the latest breaking news. The underlyi
 topic = st.text_input("Enter a news topic (e.g., 'Economy', 'Technology', 'Elections'):")
 
 # Retrieve the API key from Streamlit's secure secrets management
-API_KEY = st.secrets["0a2f5cd9d0b14a15ab667083fd6e0506"] if "NEWS_API_KEY" in st.secrets else "YOUR_LOCAL_API_KEY"
+API_KEY = st.secrets["NEWS_API_KEY"]
 
 if st.button("Fetch & Analyze Live News", type="primary"):
     if topic:
