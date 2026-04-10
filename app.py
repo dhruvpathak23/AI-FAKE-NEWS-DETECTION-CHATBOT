@@ -13,7 +13,14 @@ st.set_page_config(page_title="Live News AI Validator", page_icon="🕵️", lay
 try:
     stopwords.words('english')
 except LookupError:
-    nltk.download('stopwords')
+@st.cache_resource
+def download_nltk_data():
+    try:
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('stopwords', quiet=True)
+
+download_nltk_data()   
 
 # Load the ML artifacts
 @st.cache_resource
